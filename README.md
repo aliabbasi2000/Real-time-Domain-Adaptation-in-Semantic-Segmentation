@@ -6,14 +6,15 @@ This project explores semantic segmentation and domain adaptation techniques on 
 
 ## Table of Contents
 1. [Dataset](#dataset)
-2. [Stages and Results](#stages-and-results)
-   - [Step 2: Testing Semantic Segmentation Networks](#step-2-testing-semantic-segmentation-networks)
-   - [Step 3: Domain Shift](#step-3-domain-shift)
-   - [Step 4: Domain Adaptation](#step-4-domain-adaptation)
-3. [Comparison of Results](#comparison-of-results)
+2. [Comparison of Predictions](#comparison-of-Predictions)
    - [Loss Comparison](#loss-comparison)
    - [mIoU Comparison](#miou-comparison)
    - [Prediction Comparison](#prediction-comparison)
+
+3. [Workflow](#stages-and-results)
+   - [Step 2: Testing Semantic Segmentation Networks](#step-2-testing-semantic-segmentation-networks)
+   - [Step 3: Domain Shift](#step-3-domain-shift)
+   - [Step 4: Domain Adaptation](#step-4-domain-adaptation)
 
 ---
 
@@ -31,6 +32,42 @@ The LoveDA dataset consists of urban and rural land cover images for semantic se
 ### Dataset Splits
 - **LoveDA-urban**: Urban imagery dataset used in training and evaluation.
 - **LoveDA-rural**: Rural imagery dataset used for domain shift analysis and testing.
+
+---
+
+
+
+## Comparison of Predictions
+
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+  <img src="results/predictions/Test1.png" alt="Image" style="width: 100%;">
+  <p>Image</p>
+</div>
+
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+  <img src="results/predictions/PIDNet prediction.png" alt="PIDNet" style="width: 100%;">
+  <p>PIDNet</p>
+</div>
+
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+  <img src="results/predictions/domainshift prediction.png" alt="Domain Shift" style="width: 100%;">
+  <p>Domain Shift</p>
+</div>
+
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+  <img src="results/predictions/aug prediction.png" alt="Augmentation" style="width: 100%;">
+  <p>Augmentation</p>
+</div>
+
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+  <img src="results/predictions/adversarial prediction.png" alt="Adversarial" style="width: 100%;">
+  <p>Adversarial</p>
+</div>
+
+</div>
 
 ---
 
@@ -75,68 +112,6 @@ The LoveDA dataset consists of urban and rural land cover images for semantic se
 
 ---
 
-## Comparison of Results
-
-### Loss Comparison
-Below are the Training loss & Validation loss curves for each step:
-1. **Step 2a**: Classic segmentation network.
-2. **Step 2b**: Real-time segmentation network.
-3. **Step 3a**: Domain shift evaluation.
-4. **Step 3b**: Domain shift with augmentations.
-5. **Step 4**: Domain adaptation techniques.
-
-*(Include corresponding loss graph images for each step)*
-
-### mIoU Comparison
-Below are the mIoU comparisons for each step:
-1. **Step 2a**: Classic segmentation network.
-2. **Step 2b**: Real-time segmentation network.
-3. **Step 3a**: Domain shift evaluation.
-4. **Step 3b**: Domain shift with augmentations.
-5. **Step 4**: Domain adaptation techniques.
-
-*(Include corresponding mIoU graph images for each step)*
-
-### Prediction Comparison
-Below are visual comparisons of predictions for each step:
-1. **Step 2a**: Classic segmentation network.
-2. **Step 2b**: Real-time segmentation network.
-3. **Step 3a**: Domain shift evaluation.
-4. **Step 3b**: Domain shift with augmentations.
-5. **Step 4**: Domain adaptation techniques.
-
----
-
-<div style="display: flex; justify-content: space-between; align-items: center;">
-
-<div style="text-align: center; flex: 1; margin: 0 5px;">
-  <img src="results/predictions/Test1.png" alt="Image" style="width: 100%;">
-  <p>Image</p>
-</div>
-
-<div style="text-align: center; flex: 1; margin: 0 5px;">
-  <img src="results/predictions/PIDNet prediction.png" alt="PIDNet" style="width: 100%;">
-  <p>PIDNet</p>
-</div>
-
-<div style="text-align: center; flex: 1; margin: 0 5px;">
-  <img src="results/predictions/domainshift prediction.png" alt="Domain Shift" style="width: 100%;">
-  <p>Domain Shift</p>
-</div>
-
-<div style="text-align: center; flex: 1; margin: 0 5px;">
-  <img src="results/predictions/aug prediction.png" alt="Augmentation" style="width: 100%;">
-  <p>Augmentation</p>
-</div>
-
-<div style="text-align: center; flex: 1; margin: 0 5px;">
-  <img src="results/predictions/adversarial prediction.png" alt="Adversarial" style="width: 100%;">
-  <p>Adversarial</p>
-</div>
-
-</div>
-
----
 
 ## References
 1. LoveDA Dataset: [https://github.com/Junjue-Wang/LoveDA](https://github.com/Junjue-Wang/LoveDA)
