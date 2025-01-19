@@ -105,7 +105,36 @@ Below are visual comparisons of predictions for each step:
 4. **Step 3b**: Domain shift with augmentations.
 5. **Step 4**: Domain adaptation techniques.
 
-*(Include prediction images for each step)*
+---
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+  <img src="results/predictions/Test1.png" alt="Image" style="width: 100%;">
+  <p>Image</p>
+</div>
+
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+  <img src="results/predictions/PIDNet prediction.png" alt="PIDNet" style="width: 100%;">
+  <p>PIDNet</p>
+</div>
+
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+  <img src="results/predictions/domainshift prediction.png" alt="Domain Shift" style="width: 100%;">
+  <p>Domain Shift</p>
+</div>
+
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+  <img src="results/predictions/aug prediction.png" alt="Augmentation" style="width: 100%;">
+  <p>Augmentation</p>
+</div>
+
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+  <img src="results/predictions/adversarial prediction.png" alt="Adversarial" style="width: 100%;">
+  <p>Adversarial</p>
+</div>
+
+</div>
 
 ---
 
