@@ -40,32 +40,17 @@ The LoveDA dataset consists of urban and rural land cover images for semantic se
 ## Comparison of Predictions
 
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
+<div style="display: flex; justify-content: space-around; align-items: center;">
 
 <div style="text-align: center; flex: 1; margin: 0 5px;">
-  <img src="results/predictions/Test1.png" alt="Image" style="width: 100%;">
+   <img src="results/predictions/Test1.png" alt="Image" style="width: 15%; max-width: 150px; height: auto;">
+   <img src="results/predictions/PIDNet prediction.png" alt="PIDNet" style="width: 15%; max-width: 150px; height: auto;">
+   <img src="results/predictions/domainshift prediction.png" alt="Domain Shift" style="width: 15%; max-width: 150px; height: auto;">
+   <img src="results/predictions/aug prediction.png" alt="Augmentation" style="width: 15%; max-width: 150px; height: auto;">
+   <img src="results/predictions/adversarial prediction.png" alt="Adversarial" style="width: 15%; max-width: 150px; height: auto;">
   <p>Image</p>
 </div>
 
-<div style="text-align: center; flex: 1; margin: 0 5px;">
-  <img src="results/predictions/PIDNet prediction.png" alt="PIDNet" style="width: 100%;">
-  <p>PIDNet</p>
-</div>
-
-<div style="text-align: center; flex: 1; margin: 0 5px;">
-  <img src="results/predictions/domainshift prediction.png" alt="Domain Shift" style="width: 100%;">
-  <p>Domain Shift</p>
-</div>
-
-<div style="text-align: center; flex: 1; margin: 0 5px;">
-  <img src="results/predictions/aug prediction.png" alt="Augmentation" style="width: 100%;">
-  <p>Augmentation</p>
-</div>
-
-<div style="text-align: center; flex: 1; margin: 0 5px;">
-  <img src="results/predictions/adversarial prediction.png" alt="Adversarial" style="width: 100%;">
-  <p>Adversarial</p>
-</div>
 
 </div>
 
