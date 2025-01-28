@@ -43,11 +43,11 @@ The LoveDA dataset consists of urban and rural land cover images for semantic se
 <div style="display: flex; justify-content: space-around; align-items: center;">
 
 <div style="text-align: center; flex: 1; margin: 0 5px;">
-   <img src="results/predictions/Test1.png" alt="Image" style="width: 15%; max-width: 150px; height: auto;">
-   <img src="results/predictions/PIDNet prediction.png" alt="PIDNet" style="width: 15%; max-width: 150px; height: auto;">
-   <img src="results/predictions/domainshift prediction.png" alt="Domain Shift" style="width: 15%; max-width: 150px; height: auto;">
-   <img src="results/predictions/aug prediction.png" alt="Augmentation" style="width: 15%; max-width: 150px; height: auto;">
-   <img src="results/predictions/adversarial prediction.png" alt="Adversarial" style="width: 15%; max-width: 150px; height: auto;">
+   <img src="Figs/predictions/Test1.png" alt="Image" style="width: 15%; max-width: 150px; height: auto;">
+   <img src="Figs/predictions/PIDNet prediction.png" alt="PIDNet" style="width: 15%; max-width: 150px; height: auto;">
+   <img src="Figs/predictions/domainshift prediction.png" alt="Domain Shift" style="width: 15%; max-width: 150px; height: auto;">
+   <img src="Figs/predictions/aug prediction.png" alt="Augmentation" style="width: 15%; max-width: 150px; height: auto;">
+   <img src="Figs/predictions/adversarial prediction.png" alt="Adversarial" style="width: 15%; max-width: 150px; height: auto;">
   <p>Image</p>
 </div>
 
@@ -70,6 +70,11 @@ The LoveDA dataset consists of urban and rural land cover images for semantic se
 - **Model**: PIDNet-S pre-trained on ImageNet.
 - **Training Dataset**: LoveDA-rural dataset.
 - **Validation Dataset**: LoveDA-rural dataset.
+<div style="display: flex; justify-content: space-around; align-items: center;">
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+   <img src="Figs/miou/PIDNet miou.png" alt="Image">
+</div>
+</div>
 
 ### Step 3: Domain Shift
 #### 3a: Evaluating the Domain Shift Problem in Semantic Segmentation
@@ -77,23 +82,39 @@ The LoveDA dataset consists of urban and rural land cover images for semantic se
 - **Model**: Real-time segmentation network trained without domain adaptation.
 - **Training Dataset**: LoveDA-urban dataset.
 - **Validation Dataset**: LoveDA-rural dataset.
+<div style="display: flex; justify-content: space-around; align-items: center;">
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+   <img src="Figs/miou/domainshift miou.png" alt="Image">
+</div>
+</div>
 
 #### 3b: Data Augmentations to Reduce Domain Shift
 - **Objective**: Improve model robustness and reduce domain shift impact during training.
 - **Model**: Real-time segmentation network trained without domain adaptation and with Augmentations.
 - **Training Dataset**: LoveDA-urban dataset.
 - **Validation Dataset**: LoveDA-rural dataset.
+<div style="display: flex; justify-content: space-around; align-items: center;">
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+   <img src="Figs/miou/aug miou.png" alt="Image">
+</div>
+</div>
 
 ### Step 4: Domain Adaptation
 #### 4a: Adversarial Approach
 - **Technique**: Adversarial training using the best data augmentation settings from Step 3b.
 - **Training Dataset**: LoveDA-urban dataset.
 - **Validation Dataset**: LoveDA-rural dataset.
+<div style="display: flex; justify-content: space-around; align-items: center;">
+<div style="text-align: center; flex: 1; margin: 0 5px;">
+   <img src="Figs/miou/adversarial miou.png" alt="Image">
+</div>
+</div>
 
 #### 4b: Image-to-Image Approach
 - **Technique**: Implement image-to-image adaptation using DACS using the best data augmentation settings from Step 3b.
 - **Training Dataset**: LoveDA-urban dataset.
 - **Validation Dataset**: LoveDA-rural dataset.
+
 
 ---
 
